@@ -1,0 +1,168 @@
+
+
+
+
+
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="INDEX.CSS">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		
+			button
+    {
+		background-color: grey; /* Green */
+ 
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+		border-radius: 25px;
+        
+    }
+        
+   a:link, a:visited {
+  background-color: whitesmoke;
+  
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+a:hover, a:active {
+  border:3px solid red;
+
+
+				</style>
+	</head>
+
+
+<body>
+<!--Let us create a simple menu using the navigation tags-->
+<!--Use header to indicate that manu will be a part of header -->
+<header>
+	
+    <div>
+        <a href= "https://youtu.be/Ono-fZZvoYg" target="_blank"  
+><img alt="YouTube" src="you.png"
+         width=100" height="100"> </a>
+         <a href= "https://github.com/CO-DICT/COLOR-BUTTON" target="_blank"  
+><img alt="YouTube" src="git.png"
+         width=100" height="100"> </a>
+         </div>
+		<content>
+		
+	<button style="background-color:red;font-size: 20px;text-align: center;margin-left: 40%;
+						 margin-top: 9%;" id="redBtn2">Red</button>
+    <button style="background-color:yellow;font-size: 20px;text-align: center;
+						 margin-top: 9%;" id="yellowBtn2">Yellow</button>
+    <button style="background-color:green;font-size: 20px;text-align: center;
+						 margin-top: 9%;" id="greenBtn2">Green</button>
+    <button id="rotateClockwise">Rotate Clockwise</button>
+	
+	<button id="rotateantiClockwise">Rotate antiClockwise</button>
+
+    <br><br/>
+    
+
+    <script>
+        
+        const redBtn2 = document.getElementById('redBtn2');
+        const yellowBtn2 = document.getElementById('yellowBtn2');
+        const greenBtn2 = document.getElementById('greenBtn2');
+        const rotateClockwise = document.getElementById('rotateClockwise');
+		const rotateantiClockwise = document.getElementById('rotateantiClockwise');
+
+        redBtn2.addEventListener('click', function onClick() {
+            redBtn2.style.backgroundColor = 'red';
+        });
+
+        yellowBtn2.addEventListener('click', function onClick() {
+            yellowBtn2.style.backgroundColor = 'yellow';
+        });
+
+        greenBtn2.addEventListener('click', function onClick() {
+            greenBtn2.style.backgroundColor = 'green';
+        });
+
+        rotateClockwise.addEventListener('click', function onClick() {
+            const btnColors = [];
+            const redBtn2Color = redBtn2.style.backgroundColor; 
+            const yellowBtn2Color = yellowBtn2.style.backgroundColor;
+            const greenBtn2Color = greenBtn2.style.backgroundColor; 
+            btnColors.push(greenBtn2Color,redBtn2Color,yellowBtn2Color);
+
+            redBtn2.style.backgroundColor = btnColors[0];
+            yellowBtn2.style.backgroundColor = btnColors[1];
+            greenBtn2.style.backgroundColor = btnColors[2];
+
+        });
+		 rotateantiClockwise.addEventListener('click', function onClick() {
+            const btnColors = [];
+            const redBtn2Color = redBtn2.style.backgroundColor; 
+            const yellowBtn2Color = yellowBtn2.style.backgroundColor; 
+            const greenBtn2Color = greenBtn2.style.backgroundColor; 
+            btnColors.push(yellowBtn2Color,greenBtn2Color,redBtn2Color);
+
+            redBtn2.style.backgroundColor = btnColors[0];
+            yellowBtn2.style.backgroundColor = btnColors[1];
+            greenBtn2.style.backgroundColor = btnColors[2];
+
+        });
+
+    </script>
+		</content>
+	
+</header>
+	<footer class="footer">
+    <div class="footerContainer">
+        <p class="copyright">© NITESH KUMAR</p>
+        <q class="copy">© CO-DICT </q>
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+</body>
+</html>
